@@ -1,0 +1,13 @@
+!!!
+%html
+  %head
+    %title ToDo
+    = stylesheet_link_tag    "application", media: "all"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+  %body
+    #header/
+    %h1 ToDo
+    %p time management application
+
+  =yield

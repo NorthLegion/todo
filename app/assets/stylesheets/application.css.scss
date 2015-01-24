@@ -1,0 +1,71 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *= require bootstrap-datepicker
+ *= require_tree .
+ *= require_self
+ */
+ 
+ @import 'bootstrap';
+
+
+ a {
+    color: #FF0040;
+    font-family: Century Gothic
+   }
+ 	
+ 	#header {
+	z-index: 1;
+	position: fixed;
+	width: 100%;
+	margin-top: -20px;
+	height: 87px;
+	background-color: #668284;
+	margin-bottom: 10px;
+}
+
+h1 {
+  float:left;
+	margin-left: 5px;
+	padding-top: 8px;
+	font-size: 40px;
+	font-family: Verdana;
+	color: #ffffff;
+}
+
+p {
+	float:left;
+	margin-left: -112px;
+	padding-top: 57px;
+	font-size: 18px;
+	font-family: Century Gothic;
+	color: #ffffff;
+}
+
+.text-center {
+	float:center;
+	margin-left: 5px;
+	padding-top: 150px;
+}
+
+
+.text-right {
+  position: absolute; 
+  top: 20px;
+  right: 10px;
+  
+}
+
+strong {
+  color: #E0F8E0;
+	float:right;
+	padding-top: 15px;
+}

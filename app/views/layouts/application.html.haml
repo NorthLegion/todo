@@ -1,0 +1,18 @@
+!!!
+%html
+  %head
+    %title ToDo
+    = stylesheet_link_tag    "application", media: "all"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+  %body
+    #header/
+    %h1 ToDo
+    %p time management application
+  .text-center
+    = link_to 'New task', new_task_path, class: 'btn btn-primary', remote: true
+  .text-right
+    %strong= current_user.email
+  .text-right
+    = link_to 'logout', destroy_user_session_path, method: :delete
+  = yield
